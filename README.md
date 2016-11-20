@@ -16,7 +16,7 @@ Use this Python library to easily interface with NeuroData algorithms to
 manually annotate data, use computer vision algorithms and deploy
 across large neuroscience datasets.
 
-This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images. 
+This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images.
 
 It contains the legacy code for manno and macho.  The current version of ndod is divided into the several major components required to parse neuroscience data at scale:
 
@@ -116,3 +116,24 @@ c = np.round(np.random.rand(5,5)*100,0)
 c = np.uint8(c)
 r.cutout = c
 nd.post_ramon('ndio_demos','ramontests',r)
+
+
+## Test install stuff
+
+~~~
+
+# Install conda
+pip install conda==4.1.6
+conda install conda -y
+conda install psutil -y
+
+# Install packages for ndparse
+
+# This is basically:
+# conda install -c flyem neuroproof=1.2.2 -y
+# conda install -c flyem ilastik-everything-but-tracking=1.2.0rc10 -y
+# pip install mahotas
+# pip install keras
+# pip install ndio
+# installs of ilastik and ndparse
+# pip install jupyter notebook

@@ -1,4 +1,6 @@
 *.nii
+*.npy
+*.npz
 *.idea
 build/*.nii
 build/*
